@@ -1,0 +1,16 @@
+package util;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+
+public class HibernateManager {
+	private static HibernateManager instance;
+	private static EntityManagerFactory emf = null;
+	private static EntityManager em = null;
+	
+	public static HibernateManager getHibernateManager() {
+		if(em == null) {
+			emf.createEntityManager("QuanLyQuanCafe");
+		}
+	}
+}

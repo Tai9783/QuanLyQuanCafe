@@ -1,0 +1,16 @@
+
+import javax.persistence.EntityManager;
+
+import util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HibernateManager hibernate = HibernateManager.getInstance();
+		EntityManager em = hibernate.getEntityManager();
+		
+		
+	}
+
+}
